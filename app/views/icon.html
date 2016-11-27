@@ -1,0 +1,23 @@
+<div class="jumbotron">
+
+
+  <p>
+    <a class="btn btn-lg btn-success" ng-click="icon.randomIcon()">Random Icon
+      <span class="glyphicon glyphicon-refresh"></span>
+    </a>
+
+  </p>
+
+  <p class="lead">
+    <img ng-src="{{icon.imgIcon}}" alt=""><br>
+  </p>
+
+
+
+  <form ng-submit="icon.submit()" >
+    Entrer un id
+    <input type="text" ng-model="icon.idIcon" name="idIcon" />
+    <input type="submit" id="submit" value="Submit" class="btn btn-info" />
+    <img ng-src="{{icon.imgIconId}}" alt="">
+  </form>
+</div>
