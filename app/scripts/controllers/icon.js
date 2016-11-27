@@ -15,6 +15,7 @@ angular.module('issouFrontApp')
       'Karma'
     ];
 
+    this.panelIcon="panel panel-primary"
     this.titleIcon="Recherche icon"
     var icon="http://issou-randomizer.herokuapp.com/issou/icon/random?";
 
@@ -23,14 +24,15 @@ angular.module('issouFrontApp')
 
       this.imgIcon=icon+timeStamp();
       this.titleIcon="Recherche Random";
-      this.panelIcon="panel panel-primary"
+
+      this.panelIcon="panel panel-success"
     }
 
 
 
     //this.idIcon = '1';
     this.submit = function() {
-       this.panelIcon="panel panel-success"
+      this.panelIcon="panel panel-primary"
        this.imgIcon="http://issou-randomizer.herokuapp.com/issou/icon/"+this.idIcon;
        this.titleIcon="Recherche par ID : #"+this.idIcon;
     }

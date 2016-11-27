@@ -5,19 +5,22 @@
 
     <input type="text" class="form-control" ng-model="icon.idIcon" name="idIcon" placeholder="Rechercher par ID">
       <span class="input-group-btn">
-        <button class="btn btn-default" type="button" id="submit" value="Submit" ng-click="icon.submit()">Rechercher </button>
+        <button class="btn btn-default " type="button" id="submit" value="Submit" ng-click="icon.submit()">Rechercher </button>
       </span>
 
 
   </div><!-- /input-group -->
 </div>
 
+<div>
 
-  <a class="btn btn-lg btn-success" ng-click="icon.randomIcon()">Random Icon
+  <a class="btn btn-lg btn-success btn-sm " ng-click="icon.randomIcon()">Random Icon
     <span class="glyphicon glyphicon-refresh"></span>
   </a>
+</div>
 
 
+<br>
 
 <div class="{{icon.panelIcon}}">
 
