@@ -1,23 +1,31 @@
-<div class="jumbotron">
+<div class="col-lg-6">
 
 
-  <p>
-    <a class="btn btn-lg btn-success" ng-click="icon.randomIcon()">Random Icon
-      <span class="glyphicon glyphicon-refresh"></span>
-    </a>
+  <div class="input-group">
 
-  </p>
-
-  <p class="lead">
-    <img ng-src="{{icon.imgIcon}}" alt=""><br>
-  </p>
+    <input type="text" class="form-control" ng-model="icon.idIcon" name="idIcon" placeholder="Rechercher par ID">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button" id="submit" value="Submit" ng-click="icon.submit()">Rechercher </button>
+      </span>
 
 
+  </div><!-- /input-group -->
+</div>
 
-  <form ng-submit="icon.submit()" >
-    Entrer un id
-    <input type="text" ng-model="icon.idIcon" name="idIcon" />
-    <input type="submit" id="submit" value="Submit" class="btn btn-info" />
-    <img ng-src="{{icon.imgIconId}}" alt="">
-  </form>
+
+  <a class="btn btn-lg btn-success" ng-click="icon.randomIcon()">Random Icon
+    <span class="glyphicon glyphicon-refresh"></span>
+  </a>
+
+
+
+<div class="{{icon.panelIcon}}">
+
+  <div class="panel-heading">{{icon.titleIcon}}</div>
+  <div class="panel-body">
+    <p class="lead" align="center">
+      <img ng-src="{{icon.imgIcon}}" alt=""><br>
+    </p>
+  </div>
+
 </div>
